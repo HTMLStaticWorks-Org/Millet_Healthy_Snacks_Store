@@ -3,7 +3,7 @@
 A responsive multi-page HTML/CSS/JavaScript storefront concept.
 
 ## Pages
-- `Home1.html` — editorial, product-led homepage
+- `index.html` / `Home1.html` — editorial, product-led homepage (entry point for GitHub Pages)
 - `Home2.html` — brand/story-led alternative homepage
 - `shop.html` — product catalogue with category filters and add-to-basket interactions
 - `about.html` — brand story and values
@@ -22,7 +22,8 @@ A responsive multi-page HTML/CSS/JavaScript storefront concept.
 - Google Fonts loaded from Google Fonts
 
 ## Run
-Open `Home1.html` or `Home2.html` in a modern browser. No build step required.
+Open `index.html`, `Home1.html`, or `Home2.html` in a modern browser. No build step required.
+Live Demo: [GitHub Pages](https://htmlstaticworks-org.github.io/Millet_Healthy_Snacks_Store/)
 
 ## Before production
 This is a front-end concept. Connect a real authentication provider, payment/cart backend, product inventory, newsletter service and contact form endpoint. Replace demo contact details and verify all product claims, prices and ingredient information. Internet access is needed for the remote images and fonts.
