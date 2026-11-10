@@ -32,22 +32,23 @@
           <input id="loginEmail" type="email" required placeholder="you@example.com">
         </div>
 
-        <!-- Point 10: Forgot password text placed BELOW the password tab box -->
-        <div class="field">
+        <!-- Password field with eye toggle -->
+        <div class="field" style="margin-bottom:8px">
           <label for="loginPassword">Password</label>
           <div class="password-wrap">
             <input id="loginPassword" type="password" required minlength="6" placeholder="Enter your password">
             <button type="button" class="eye-toggle-btn" data-eye-toggle aria-label="Toggle password visibility">👁</button>
           </div>
-          <div class="forgot-password-wrap">
-            <a href="#" class="forgot-link">Forgot password?</a>
-          </div>
         </div>
 
-        <label class="form-check">
-          <input type="checkbox" checked>
-          <span>Keep me signed in on this device</span>
-        </label>
+        <!-- Issue 5 & 10: Cleanly aligned helper row directly below password tab box -->
+        <div class="auth-helper-row">
+          <label class="form-check" style="margin:0">
+            <input type="checkbox" checked>
+            <span>Keep me signed in</span>
+          </label>
+          <a href="#" class="forgot-link">Forgot password?</a>
+        </div>
 
         <button class="btn" type="submit">Sign In →</button>
       </form>

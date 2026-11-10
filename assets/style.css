@@ -591,8 +591,22 @@ button, input, textarea, select {
   color: #08120a !important;
 }
 
+.product-card {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
 .product-info {
   padding: 20px;
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto !important;
+}
+
+.product-info p {
+  flex: 1 1 auto !important;
+  margin-bottom: 16px;
 }
 
 .rating {
@@ -601,11 +615,57 @@ button, input, textarea, select {
   margin: 6px 0;
 }
 
+/* Point 2: CTA & Price alignment in product cards */
 .product-bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 16px;
+  margin-top: auto !important;
+  padding-top: 14px;
+}
+
+/* Point 4: Recipe Card & Health Benefits styling & padding */
+.recipe-card {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
+.recipe-card img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.recipe-copy {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.recipe-copy .meta {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  color: var(--brand);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.recipe-copy h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  line-height: 1.35;
+}
+
+.recipe-copy p {
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .price {
@@ -1143,20 +1203,20 @@ button, input, textarea, select {
   justify-content: center;
   background: var(--bg);
   position: relative;
-  padding: 60px 20px;
+  padding: 80px 20px 40px;
 }
 
 /* Point 16: Keep Theme and RTL outside the card across all screens */
 .auth-top-actions {
   position: fixed;
   top: 20px;
-  right: 20px;
+  right: 24px;
   display: flex;
   align-items: center;
   gap: 8px;
   z-index: 1000;
   background: var(--surface);
-  padding: 6px;
+  padding: 6px 10px;
   border-radius: 999px;
   border: 1px solid var(--line);
   box-shadow: 0 6px 20px rgba(0,0,0,0.12);
@@ -1164,7 +1224,7 @@ button, input, textarea, select {
 
 .rtl .auth-top-actions {
   right: auto;
-  left: 20px;
+  left: 24px;
 }
 
 .auth-box {
@@ -1196,7 +1256,44 @@ button, input, textarea, select {
   margin-top: 8px;
 }
 
-/* Point 10: Place Forget text BELOW the tab box */
+/* Issue 5 & 10: Place Forget text cleanly aligned BELOW password tab box */
+.auth-helper-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0 22px;
+  gap: 12px;
+}
+
+.auth-helper-row .form-check {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.auth-helper-row .form-check input {
+  margin: 0;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  accent-color: var(--brand);
+}
+
+.auth-helper-row .forgot-link {
+  color: var(--brand);
+  font-weight: 700;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.auth-helper-row .forgot-link:hover {
+  text-decoration: underline;
+}
+
 .forgot-password-wrap {
   text-align: right;
   margin-top: 8px;
@@ -1362,13 +1459,59 @@ button, input, textarea, select {
   gap: 38px;
 }
 
-.site-footer p, .site-footer a {
+/* Ensure the footer logo and brand name are 100% IDENTICAL in size and styling to the navbar logo */
+.site-footer a.logo,
+.site-footer .logo {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  font-weight: 800 !important;
+  font-size: 21px !important;
+  letter-spacing: -.03em !important;
+  color: var(--footer-ink) !important;
+  text-decoration: none !important;
+}
+
+.site-footer a.logo:hover,
+.site-footer .logo:hover {
+  color: var(--footer-ink) !important;
+}
+
+.site-footer .logo .logo-mark {
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  min-height: 42px !important;
+  border-radius: 13px !important;
+  background: var(--brand) !important;
+  color: #ffffff !important;
+  display: grid !important;
+  place-items: center !important;
+  font-size: 20px !important;
+  flex-shrink: 0 !important;
+}
+
+[data-theme="dark"] .site-footer .logo .logo-mark {
+  color: #0c180e !important;
+}
+
+.site-footer .logo small {
+  display: block !important;
+  color: var(--footer-muted) !important;
+  font-size: 9px !important;
+  letter-spacing: .16em !important;
+  text-transform: uppercase !important;
+  margin-top: -3px !important;
+  font-weight: 700 !important;
+}
+
+.site-footer p, .site-footer a:not(.logo) {
   color: var(--footer-muted);
   font-size: 13px;
   transition: color .2s;
 }
 
-.site-footer a:hover {
+.site-footer a:not(.logo):hover {
   color: var(--brand);
 }
 
@@ -1728,13 +1871,15 @@ button, input, textarea, select {
     padding: 50px 0 60px;
   }
 
+  /* Point 6: Single-column stack on mobile for all 2-column layouts including What Goes In/Out */
+  .grid-2,
   .hero-grid,
   .hero-home2-layout,
   .split,
   .contact-grid,
   .story-card {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
   }
 
   /* Point 5 & 6: Story Card Image Mobile */
@@ -1824,8 +1969,19 @@ button, input, textarea, select {
     padding: 28px 22px;
   }
 
+  /* Point 7 & 16: Keep theme/RTL buttons clear of card on mobile */
   .auth-page {
-    padding: 50px 16px;
+    padding: 86px 16px 40px !important;
+  }
+
+  .auth-top-actions {
+    top: 16px;
+    right: 16px;
+  }
+
+  .rtl .auth-top-actions {
+    right: auto;
+    left: 16px;
   }
 
   .auth-box {
