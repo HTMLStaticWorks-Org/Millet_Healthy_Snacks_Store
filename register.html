@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <!-- Point 25: Theme & RTL buttons outside the card in mobile view -->
+  <!-- Point 16: Keep Theme & RTL buttons outside the card on all screens -->
   <div class="auth-top-actions">
     <button class="icon-btn" data-rtl-toggle title="Toggle RTL">⇄</button>
     <button class="icon-btn" data-theme-toggle title="Toggle theme">◐</button>
@@ -17,13 +17,14 @@
 
   <main class="auth-page">
     <div class="auth-box">
+      <!-- Point 9: Brand name aligned in center -->
       <a class="logo auth-logo" href="index.html">
         <span class="logo-mark">✳</span>
         <span>millet<span class="brand-amp">&</span>more<small>goodness in every bite</small></span>
       </a>
-      <div class="eyebrow" style="text-align:center">THE GOOD-SNACK CLUB</div>
+
+      <!-- Point 8: Clean heading without extra paragraph text -->
       <h1>Create Your Account</h1>
-      <p>Join over 10,000+ conscious snackers. Get 10% off your first order and exclusive seasonal drops.</p>
 
       <form data-demo data-success="Welcome to Millet&More! Your account has been created.">
         <div class="field">
@@ -36,7 +37,7 @@
           <input id="regEmail" type="email" required placeholder="priya@example.com">
         </div>
 
-        <!-- Point 18: Password field with eye toggle -->
+        <!-- Password field with eye toggle -->
         <div class="field">
           <label for="regPassword">Password * (Min 6 characters)</label>
           <div class="password-wrap">
@@ -45,7 +46,16 @@
           </div>
         </div>
 
-        <!-- Point 18: Properly aligned checkboxes with validation -->
+        <!-- Point 11: CONFIRM PASSWORD TAB BOX WITH EYE TOGGLE -->
+        <div class="field">
+          <label for="regConfirmPassword">Confirm Password *</label>
+          <div class="password-wrap">
+            <input id="regConfirmPassword" type="password" required minlength="6" placeholder="Re-enter your password">
+            <button type="button" class="eye-toggle-btn" data-eye-toggle aria-label="Toggle confirm password visibility">👁</button>
+          </div>
+        </div>
+
+        <!-- Checkboxes with validation -->
         <label class="form-check">
           <input type="checkbox" required>
           <span>I agree to the <a href="#" style="color:var(--brand);font-weight:700">Terms of Service</a> &amp; <a href="#" style="color:var(--brand);font-weight:700">Privacy Policy</a> *</span>
@@ -59,7 +69,7 @@
         <button class="btn" type="submit">Create My Account →</button>
       </form>
 
-      <!-- Point 20: SOCIAL MEDIA SIGN UP BUTTONS -->
+      <!-- Social sign up buttons -->
       <div class="social-auth-title">Or sign up with</div>
       <div class="social-auth-grid">
         <button type="button" class="social-auth-btn" onclick="toast('Connecting with Google...')">
@@ -77,7 +87,7 @@
       </div>
 
       <div class="auth-bottom">Already part of the club? <a href="login.html">Sign In</a></div>
-      <a class="back-home" href="index.html">← Back to Millet&More Store</a>
+      <a class="back-home" href="index.html">← Back to Millet&amp;More Store</a>
     </div>
   </main>
 

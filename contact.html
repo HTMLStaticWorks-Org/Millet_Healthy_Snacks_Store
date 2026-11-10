@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Get in touch with the Millet&More team. Product enquiries, bulk orders, customer support, and frequently asked questions.">
-  <title>Contact & Enquiry | Millet&More</title>
+  <title>Contact &amp; Enquiry | Millet&More</title>
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="alternate icon" href="assets/images/favicon.svg">
   <link rel="stylesheet" href="assets/style.css">
@@ -18,6 +18,8 @@
         <span class="logo-mark">✳</span>
         <span>millet<span class="brand-amp">&</span>more<small>goodness in every bite</small></span>
       </a>
+
+      <!-- Point 12: Desktop Links + Mobile Drawer with Cart, RTL, Theme, and Sign In -->
       <nav class="nav-links">
         <a class="" href="Home1.html">Home 1</a>
         <a class="" href="Home2.html">Home 2</a>
@@ -25,15 +27,34 @@
         <a class="" href="health-benefits.html">Health Benefits</a>
         <a class="" href="about.html">Our Story</a>
         <a class="active" href="contact.html">Contact</a>
+
+        <div class="mobile-nav-actions">
+          <div class="mobile-icons-row">
+            <button class="mobile-action-pill" aria-label="Basket">
+              <span>🛍 Cart</span>
+              <sup data-cart-count>0</sup>
+            </button>
+            <button class="mobile-action-pill" data-rtl-toggle title="Toggle RTL">
+              <span>⇄ RTL</span>
+            </button>
+            <button class="mobile-action-pill" data-theme-toggle title="Toggle theme">
+              <span>◐ Theme</span>
+            </button>
+          </div>
+          <a class="mobile-signin-btn" href="login.html">Sign In to Account →</a>
+        </div>
       </nav>
+
+      <!-- Desktop Nav Actions -->
       <div class="nav-actions">
-        <!-- Point 3: Cart icon before RTL button -->
         <button class="icon-btn" aria-label="Basket" title="Basket">🛍<sup data-cart-count>0</sup></button>
         <button class="icon-btn" data-rtl-toggle title="Toggle RTL">⇄</button>
         <button class="icon-btn" data-theme-toggle title="Toggle theme">◐</button>
         <a class="btn" href="login.html">Sign in</a>
-        <button class="menu-btn" aria-label="Open menu">☰</button>
       </div>
+
+      <!-- Mobile Hamburger Trigger -->
+      <button class="menu-btn mobile-menu-trigger" aria-label="Open menu">☰</button>
     </div>
   </header>
 
@@ -41,11 +62,12 @@
     <section class="page-hero">
       <div class="container">
         <div class="eyebrow-pill">💬 We are here to help</div>
-        <h1>Contact & Enquiry</h1>
+        <h1>Contact &amp; Enquiry</h1>
         <p>Questions about an order, curious about an ancient grain ingredient, or planning a bulk corporate hamper? Our friendly team in Bengaluru would love to connect with you.</p>
       </div>
     </section>
 
+    <!-- CONTACT GRID & ENQUIRY FORM -->
     <section class="content-section">
       <div class="container">
         <div class="contact-grid">
@@ -56,7 +78,7 @@
             <p>Our friendly customer care and food curation team is available Monday through Saturday to assist with all your questions.</p>
             
             <p style="margin-top:20px">
-              <strong>📍 Flagship Experience Centre & Kitchen</strong><br>
+              <strong>📍 Flagship Experience Centre &amp; Kitchen</strong><br>
               100 Feet Road, Indiranagar, Bengaluru, Karnataka 560038
             </p>
             <p>
@@ -64,7 +86,7 @@
               hello@milletandmore.example
             </p>
             <p>
-              <strong>☎ Phone & WhatsApp Support</strong><br>
+              <strong>☎ Phone &amp; WhatsApp Support</strong><br>
               +91 98765 43210 (Mon–Sat, 9:30 AM–6:00 PM IST)
             </p>
 
@@ -87,7 +109,7 @@
             </div>
           </div>
 
-          <!-- Right: Point 17: ENQUIRY FORM -->
+          <!-- Right: ENQUIRY FORM -->
           <form class="form-card" data-demo data-success="Thank you for your enquiry! Our team will respond within 24 hours.">
             <div class="eyebrow">Enquiry Form</div>
             <h2 style="font-family:'Playfair Display';font-size:28px;margin:5px 0 20px">Store &amp; Product Enquiry Form</h2>
@@ -112,8 +134,8 @@
               <select>
                 <option>General Product Question</option>
                 <option>Corporate / Bulk Gifting Hamper</option>
-                <option>Retail & Distribution Partnership</option>
-                <option>Order Status & Shipping Support</option>
+                <option>Retail &amp; Distribution Partnership</option>
+                <option>Order Status &amp; Shipping Support</option>
                 <option>Other Enquiries</option>
               </select>
             </div>
@@ -127,8 +149,8 @@
           </form>
         </div>
 
-        <!-- Point 16: FREQUENTLY ASKED QUESTIONS (FAQ SECTION) -->
-        <div id="faq" style="margin-top:70px">
+        <!-- FREQUENTLY ASKED QUESTIONS -->
+        <div id="faq" style="margin-top:76px">
           <div class="section-head" style="text-align:center;display:block;margin-bottom:20px">
             <div class="eyebrow-pill">Got Questions?</div>
             <h2>Frequently Asked Questions</h2>
@@ -138,7 +160,7 @@
           <div class="faq-wrap">
             <div class="faq-item open">
               <button class="faq-question">
-                <span>Are all Millet&More snacks 100% gluten-free?</span>
+                <span>Are all Millet&amp;More snacks 100% gluten-free?</span>
                 <span class="faq-chevron">▼</span>
               </button>
               <div class="faq-answer">
@@ -197,8 +219,12 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Interactive Map Card -->
+    <!-- Point 7: DEDICATED, PROPERLY PLACED MAP SECTION -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
         <div class="map-card">
           <div class="map-header">
             <div>
@@ -213,7 +239,7 @@
     </section>
   </main>
 
-  <!-- Point 5 & 7: FOOTER -->
+  <!-- Point 1: FOOTER (Identical brand logo & fixed hover icon visibility) -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -238,6 +264,9 @@
               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube">
                 <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
               </a>
+              <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Pinterest">
+                <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.357-.053.224-.174.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+              </a>
             </div>
           </div>
         </div>
@@ -246,15 +275,15 @@
           <div class="footer-links">
             <a href="products.html">All Products</a>
             <a href="health-benefits.html">Health Benefits</a>
-            <a href="about.html">Our Story & Farmers</a>
+            <a href="about.html">Our Story &amp; Farmers</a>
             <a href="contact.html">Contact Us</a>
           </div>
         </div>
         <div>
           <h4>Customer Care</h4>
           <div class="footer-links">
-            <a href="contact.html#faq">FAQs & Answers</a>
-            <a href="contact.html">Shipping & Returns</a>
+            <a href="contact.html#faq">FAQs &amp; Answers</a>
+            <a href="contact.html">Shipping &amp; Returns</a>
             <a href="about.html">Quality Certifications</a>
             <a href="login.html">My Account</a>
           </div>

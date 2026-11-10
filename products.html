@@ -18,6 +18,8 @@
         <span class="logo-mark">✳</span>
         <span>millet<span class="brand-amp">&</span>more<small>goodness in every bite</small></span>
       </a>
+
+      <!-- Point 12: Desktop Links + Mobile Drawer with Cart, RTL, Theme, and Sign In -->
       <nav class="nav-links">
         <a class="" href="Home1.html">Home 1</a>
         <a class="" href="Home2.html">Home 2</a>
@@ -25,15 +27,34 @@
         <a class="" href="health-benefits.html">Health Benefits</a>
         <a class="" href="about.html">Our Story</a>
         <a class="" href="contact.html">Contact</a>
+
+        <div class="mobile-nav-actions">
+          <div class="mobile-icons-row">
+            <button class="mobile-action-pill" aria-label="Basket">
+              <span>🛍 Cart</span>
+              <sup data-cart-count>0</sup>
+            </button>
+            <button class="mobile-action-pill" data-rtl-toggle title="Toggle RTL">
+              <span>⇄ RTL</span>
+            </button>
+            <button class="mobile-action-pill" data-theme-toggle title="Toggle theme">
+              <span>◐ Theme</span>
+            </button>
+          </div>
+          <a class="mobile-signin-btn" href="login.html">Sign In to Account →</a>
+        </div>
       </nav>
+
+      <!-- Desktop Nav Actions -->
       <div class="nav-actions">
-        <!-- Point 3: Cart icon before RTL button -->
         <button class="icon-btn" aria-label="Basket" title="Basket">🛍<sup data-cart-count>0</sup></button>
         <button class="icon-btn" data-rtl-toggle title="Toggle RTL">⇄</button>
         <button class="icon-btn" data-theme-toggle title="Toggle theme">◐</button>
         <a class="btn" href="login.html">Sign in</a>
-        <button class="menu-btn" aria-label="Open menu">☰</button>
       </div>
+
+      <!-- Mobile Hamburger Trigger -->
+      <button class="menu-btn mobile-menu-trigger" aria-label="Open menu">☰</button>
     </div>
   </header>
 
@@ -46,27 +67,27 @@
       </div>
     </section>
 
-    <!-- Point 11: CENTERED TABS & HOVER EFFECT IN BOTH THEMES -->
+    <!-- Point 15: Centered filter tabs with clean mobile wrap -->
     <section class="content-section">
       <div class="container">
         <div class="filters">
           <button class="filter active" data-filter="all">All Products (8)</button>
-          <button class="filter" data-filter="crunch">Crunchy Puffs & Crisps</button>
-          <button class="filter" data-filter="mix">Seed & Grain Mixes</button>
+          <button class="filter" data-filter="crunch">Crunchy Puffs &amp; Crisps</button>
+          <button class="filter" data-filter="mix">Seed &amp; Grain Mixes</button>
           <button class="filter" data-filter="treat">Clean Sweet Treats</button>
           <button class="filter" data-filter="staple">Pantry Essentials</button>
         </div>
 
-        <!-- Point 12: AUTHENTIC, RELEVANT MILLET PRODUCT IMAGES -->
+        <!-- Point 14 & 15: Fresh, vibrant food images with single-col mobile layout -->
         <div class="grid-4">
           <!-- 1: Ragi Puffs -->
           <article class="product-card" data-category="crunch">
             <div class="product-img">
-              <img src="https://images.unsplash.com/photo-1621939514649-280e2aa2f2b8?auto=format&fit=crop&w=700&q=80" alt="Roasted Ragi and Jowar Puffs">
+              <img src="https://images.unsplash.com/photo-1621939514649-280e2aa2f2b8?auto=format&fit=crop&w=800&q=80" alt="Roasted Ragi and Jowar Puffs">
               <span class="tag">BESTSELLER</span>
             </div>
             <div class="product-info">
-              <h3>Ragi & Jowar Roasted Puffs</h3>
+              <h3>Ragi &amp; Jowar Roasted Puffs</h3>
               <div class="rating">★★★★★ <span style="color:var(--muted)">(142)</span></div>
               <p>Light as a feather, bursting with tangy chaat masala.</p>
               <div class="product-bottom">
@@ -79,7 +100,7 @@
           <!-- 2: Bajra Masala -->
           <article class="product-card" data-category="crunch">
             <div class="product-img">
-              <img src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=700&q=80" alt="Masala Bajra Crunch Mix">
+              <img src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=800&q=80" alt="Masala Bajra Crunch Mix">
               <span class="tag">IRON RICH</span>
             </div>
             <div class="product-info">
@@ -96,13 +117,13 @@
           <!-- 3: Trail Mix -->
           <article class="product-card" data-category="mix">
             <div class="product-img">
-              <img src="https://images.unsplash.com/photo-1515543904379-3d757afe72e4?auto=format&fit=crop&w=700&q=80" alt="Sprouted Millet Super Trail Mix">
+              <img src="https://images.unsplash.com/photo-1515543904379-3d757afe72e4?auto=format&fit=crop&w=800&q=80" alt="Sprouted Millet Super Trail Mix">
               <span class="tag">POWER PACK</span>
             </div>
             <div class="product-info">
               <h3>Sprouted Millet Super Trail Mix</h3>
               <div class="rating">★★★★★ <span style="color:var(--muted)">(98)</span></div>
-              <p>Crispy puffed grains, chia seeds, almonds & dried cranberries.</p>
+              <p>Crispy puffed grains, chia seeds, almonds &amp; dried cranberries.</p>
               <div class="product-bottom">
                 <span class="price">₹199</span>
                 <button class="add-btn" aria-label="Add to basket">+</button>
@@ -113,11 +134,11 @@
           <!-- 4: Seed & Nut Munch -->
           <article class="product-card" data-category="mix">
             <div class="product-img">
-              <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&w=700&q=80" alt="Herb Roasted Seed and Grain Munch">
+              <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&w=800&q=80" alt="Herb Roasted Seed and Grain Munch">
               <span class="tag">HIGH PROTEIN</span>
             </div>
             <div class="product-info">
-              <h3>Herb Roasted Seed & Grain Munch</h3>
+              <h3>Herb Roasted Seed &amp; Grain Munch</h3>
               <div class="rating">★★★★★ <span style="color:var(--muted)">(89)</span></div>
               <p>Pumpkin seeds, sunflower seeds, and popped foxtail grains.</p>
               <div class="product-bottom">
@@ -130,7 +151,7 @@
           <!-- 5: Cocoa Bites -->
           <article class="product-card" data-category="treat">
             <div class="product-img">
-              <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=700&q=80" alt="Dark Cocoa Foxtail Energy Bites">
+              <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=800&q=80" alt="Dark Cocoa Foxtail Energy Bites">
               <span class="tag">NATURAL SWEET</span>
             </div>
             <div class="product-info">
@@ -147,13 +168,13 @@
           <!-- 6: Date Laddoo -->
           <article class="product-card" data-category="treat">
             <div class="product-img">
-              <img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=700&q=80" alt="Traditional Sprouted Ragi Date Laddoos">
+              <img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=800&q=80" alt="Traditional Sprouted Ragi Date Laddoos">
               <span class="tag">CALCIUM BOOST</span>
             </div>
             <div class="product-info">
-              <h3>Sprouted Ragi & Date Laddoos</h3>
+              <h3>Sprouted Ragi &amp; Date Laddoos</h3>
               <div class="rating">★★★★★ <span style="color:var(--muted)">(120)</span></div>
-              <p>Hand-rolled with A2 cow ghee, dates, cardamom & sprouted ragi.</p>
+              <p>Hand-rolled with A2 cow ghee, dates, cardamom &amp; sprouted ragi.</p>
               <div class="product-bottom">
                 <span class="price">₹189</span>
                 <button class="add-btn" aria-label="Add to basket">+</button>
@@ -164,11 +185,11 @@
           <!-- 7: Herb Crisps -->
           <article class="product-card" data-category="crunch">
             <div class="product-img">
-              <img src="https://images.unsplash.com/photo-1599490659213-e2b9527bd087?auto=format&fit=crop&w=700&q=80" alt="Rosemary & Sea Salt Millet Thins">
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Rosemary & Sea Salt Millet Thins">
               <span class="tag">BAKED</span>
             </div>
             <div class="product-info">
-              <h3>Rosemary & Sea Salt Millet Thins</h3>
+              <h3>Rosemary &amp; Sea Salt Millet Thins</h3>
               <div class="rating">★★★★★ <span style="color:var(--muted)">(78)</span></div>
               <p>Artisanal baked crackers with extra virgin olive oil.</p>
               <div class="product-bottom">
@@ -181,7 +202,7 @@
           <!-- 8: Breakfast Flakes -->
           <article class="product-card" data-category="staple">
             <div class="product-img">
-              <img src="https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=700&q=80" alt="Multi-Millet Breakfast Crunch Flakes">
+              <img src="https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=800&q=80" alt="Multi-Millet Breakfast Crunch Flakes">
               <span class="tag">PANTRY STAPLE</span>
             </div>
             <div class="product-info">
@@ -198,51 +219,63 @@
       </div>
     </section>
 
-    <!-- Point 13: NEW SECTION 1 - CURATED VARIETY HAMPERS & VALUE BUNDLES -->
+    <!-- Point 3: Centered, aligned CTA buttons in Hampers -->
     <section class="section alt">
       <div class="container">
         <div class="section-head">
           <div>
-            <div class="eyebrow">Bundle & Save</div>
-            <h2>Curated Snack Boxes & Gift Hampers</h2>
+            <div class="eyebrow">Bundle &amp; Save</div>
+            <h2>Curated Snack Boxes &amp; Gift Hampers</h2>
           </div>
           <p>Hand-picked assortments to stock your home pantry or fuel your office desk with clean vitality.</p>
         </div>
         <div class="grid-3">
-          <div class="bundle-card" style="padding:28px">
-            <div class="benefit-badge">SAVE 15%</div>
-            <h3>The Daily Munch Box</h3>
-            <p style="margin:10px 0 16px;color:var(--muted);font-size:13px">5 bestselling pouches: 2x Ragi Puffs, 2x Bajra Crunch, 1x Super Trail Mix. Perfect starter pack for curious healthy eaters.</p>
-            <div style="font-size:24px;font-weight:800;margin-bottom:18px">₹649 <span style="font-size:14px;color:var(--muted);text-decoration:line-through">₹765</span></div>
-            <button class="btn add-btn-bundle" style="width:100%" onclick="toast('Added Daily Munch Box to basket 🌾')">Add Bundle to Basket</button>
+          <div class="bundle-card">
+            <div>
+              <div class="benefit-badge">SAVE 15%</div>
+              <h3>The Daily Munch Box</h3>
+              <p style="margin:10px 0 16px;color:var(--muted);font-size:13px">5 bestselling pouches: 2x Ragi Puffs, 2x Bajra Crunch, 1x Super Trail Mix. Perfect starter pack for curious healthy eaters.</p>
+            </div>
+            <div>
+              <div style="font-size:24px;font-weight:800;margin-bottom:18px">₹649 <span style="font-size:14px;color:var(--muted);text-decoration:line-through">₹765</span></div>
+              <button class="btn add-btn-bundle" style="width:100%">Add Bundle to Basket</button>
+            </div>
           </div>
 
-          <div class="bundle-card" style="padding:28px;border:2px solid var(--brand)">
-            <div class="benefit-badge" style="background:var(--brand);color:#fff">MOST POPULAR • SAVE 20%</div>
-            <h3>Desk Rescue Caddy</h3>
-            <p style="margin:10px 0 16px;color:var(--muted);font-size:13px">8 packs of balanced savory and energy-boosting sweet snacks designed to conquer midday 4 PM slump without junk cravings.</p>
-            <div style="font-size:24px;font-weight:800;margin-bottom:18px">₹999 <span style="font-size:14px;color:var(--muted);text-decoration:line-through">₹1,249</span></div>
-            <button class="btn" style="width:100%" onclick="toast('Added Desk Rescue Caddy to basket 🌾')">Add Bundle to Basket</button>
+          <div class="bundle-card" style="border:2px solid var(--brand)">
+            <div>
+              <div class="benefit-badge" style="background:var(--brand);color:#fff">MOST POPULAR • SAVE 20%</div>
+              <h3>Desk Rescue Caddy</h3>
+              <p style="margin:10px 0 16px;color:var(--muted);font-size:13px">8 packs of balanced savory and energy-boosting sweet snacks designed to conquer midday 4 PM slump without junk cravings.</p>
+            </div>
+            <div>
+              <div style="font-size:24px;font-weight:800;margin-bottom:18px">₹999 <span style="font-size:14px;color:var(--muted);text-decoration:line-through">₹1,249</span></div>
+              <button class="btn add-btn-bundle" style="width:100%">Add Bundle to Basket</button>
+            </div>
           </div>
 
-          <div class="bundle-card" style="padding:28px">
-            <div class="benefit-badge">SAVE 25%</div>
-            <h3>Family Wellness Hamper</h3>
-            <p style="margin:10px 0 16px;color:var(--muted);font-size:13px">12 assorted family packs + a collectible brass airtight storage tin. Includes sweet treats, savory bites, and breakfast flakes.</p>
-            <div style="font-size:24px;font-weight:800;margin-bottom:18px">₹1,599 <span style="font-size:14px;color:var(--muted);text-decoration:line-through">₹2,130</span></div>
-            <button class="btn add-btn-bundle" style="width:100%" onclick="toast('Added Family Wellness Hamper to basket 🌾')">Add Bundle to Basket</button>
+          <div class="bundle-card">
+            <div>
+              <div class="benefit-badge">SAVE 25%</div>
+              <h3>Family Wellness Hamper</h3>
+              <p style="margin:10px 0 16px;color:var(--muted);font-size:13px">12 assorted family packs + a collectible brass airtight storage tin. Includes sweet treats, savory bites, and breakfast flakes.</p>
+            </div>
+            <div>
+              <div style="font-size:24px;font-weight:800;margin-bottom:18px">₹1,599 <span style="font-size:14px;color:var(--muted);text-decoration:line-through">₹2,130</span></div>
+              <button class="btn add-btn-bundle" style="width:100%">Add Bundle to Basket</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Point 13: NEW SECTION 2 - CLEAN INGREDIENT PROMISE: WHAT GOES IN & WHAT STAYS OUT -->
+    <!-- CLEAN INGREDIENT PROMISE -->
     <section class="section">
       <div class="container">
         <div class="section-head">
           <div>
-            <div class="eyebrow">Pure & Honest Integrity</div>
-            <h2>What Goes In & What Stays Out</h2>
+            <div class="eyebrow">Pure &amp; Honest Integrity</div>
+            <h2>What Goes In &amp; What Stays Out</h2>
           </div>
           <p>We read labels so you don't have to worry. Our clean pantry promise ensures pure nourishment.</p>
         </div>
@@ -254,7 +287,7 @@
             </h3>
             <ul style="padding-left:20px;line-height:1.9;color:var(--muted);font-size:14px">
               <li><strong style="color:var(--ink)">100% Native Whole Millets:</strong> Sprouted Ragi, Pearl Millet (Bajra), Sorghum (Jowar), and Foxtail.</li>
-              <li><strong style="color:var(--ink)">Cold-Pressed Virgin Oils:</strong> Wood-pressed groundnut & sesame oils rich in natural antioxidants.</li>
+              <li><strong style="color:var(--ink)">Cold-Pressed Virgin Oils:</strong> Wood-pressed groundnut &amp; sesame oils rich in natural antioxidants.</li>
               <li><strong style="color:var(--ink)">Sun-Dried Natural Spices:</strong> Whole cumin, black pepper, Himalayan pink salt, and fresh curry leaves.</li>
               <li><strong style="color:var(--ink)">Unrefined Sweeteners:</strong> Wild forest honey and organic palm jaggery, never white chemical sugar.</li>
             </ul>
@@ -276,7 +309,7 @@
       </div>
     </section>
 
-    <!-- BANNER -->
+    <!-- Point 3: BANNER CTA (Centered, aligned text & button) -->
     <section class="section alt">
       <div class="container">
         <div class="banner">
@@ -290,7 +323,7 @@
     </section>
   </main>
 
-  <!-- Point 5 & 7: FOOTER -->
+  <!-- Point 1: FOOTER (Identical brand logo & fixed hover icon visibility) -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -314,6 +347,9 @@
               </a>
               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube">
                 <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+              <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Pinterest">
+                <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.357-.053.224-.174.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
               </a>
             </div>
           </div>

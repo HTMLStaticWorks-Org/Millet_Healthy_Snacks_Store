@@ -1,8 +1,5 @@
 // Theme, RTL and Navigation Controls
 const body = document.body;
-const themeBtn = document.querySelector('[data-theme-toggle]');
-const rtlBtn = document.querySelector('[data-rtl-toggle]');
-const menuBtn = document.querySelector('.menu-btn');
 const backToTopBtn = document.getElementById('backToTop');
 
 // Load saved preferences
@@ -13,29 +10,36 @@ if (localStorage.getItem('millet-rtl') === 'true') {
   body.classList.add('rtl');
 }
 
-// Toggle Theme
-themeBtn?.addEventListener('click', () => {
-  body.dataset.theme = body.dataset.theme === 'dark' ? 'light' : 'dark';
-  localStorage.setItem('millet-theme', body.dataset.theme);
+// Toggle Theme (support all theme buttons across desktop, mobile drawer, and auth)
+document.querySelectorAll('[data-theme-toggle]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    body.dataset.theme = body.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('millet-theme', body.dataset.theme);
+  });
 });
 
-// Toggle RTL
-rtlBtn?.addEventListener('click', () => {
-  body.classList.toggle('rtl');
-  localStorage.setItem('millet-rtl', body.classList.contains('rtl'));
+// Toggle RTL (support all RTL buttons across desktop, mobile drawer, and auth)
+document.querySelectorAll('[data-rtl-toggle]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    body.classList.toggle('rtl');
+    localStorage.setItem('millet-rtl', body.classList.contains('rtl'));
+  });
 });
 
 // Mobile / Tablet Hamburger Toggle
-menuBtn?.addEventListener('click', (e) => {
-  e.stopPropagation();
-  const nav = document.querySelector('.nav-links');
-  nav?.classList.toggle('open');
+document.querySelectorAll('.menu-btn').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const nav = document.querySelector('.nav-links');
+    nav?.classList.toggle('open');
+  });
 });
 
 // Close mobile menu when clicking outside
 document.addEventListener('click', (e) => {
   const nav = document.querySelector('.nav-links');
-  if (nav?.classList.contains('open') && !nav.contains(e.target) && !menuBtn?.contains(e.target)) {
+  const isMenuBtn = e.target.closest('.menu-btn');
+  if (nav?.classList.contains('open') && !nav.contains(e.target) && !isMenuBtn) {
     nav.classList.remove('open');
   }
 });
@@ -45,7 +49,7 @@ let cart = parseInt(localStorage.getItem('millet-cart-count') || '0', 10);
 const cartCountElements = document.querySelectorAll('[data-cart-count]');
 cartCountElements.forEach(el => el.textContent = cart);
 
-document.querySelectorAll('.add-btn').forEach(btn => {
+document.querySelectorAll('.add-btn, .add-btn-bundle').forEach(btn => {
   btn.addEventListener('click', () => {
     cart++;
     localStorage.setItem('millet-cart-count', cart);
@@ -66,7 +70,7 @@ function toast(msg) {
   setTimeout(() => t.classList.remove('show'), 2400);
 }
 
-// Point 11: Product Tab Filters
+// Product Tab Filters
 document.querySelectorAll('[data-filter]').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('[data-filter]').forEach(x => x.classList.remove('active'));
@@ -78,12 +82,11 @@ document.querySelectorAll('[data-filter]').forEach(btn => {
   });
 });
 
-// Point 16: FAQ Accordion Toggle
+// FAQ Accordion Toggle
 document.querySelectorAll('.faq-question').forEach(btn => {
   btn.addEventListener('click', () => {
     const item = btn.closest('.faq-item');
     const isOpen = item.classList.contains('open');
-    // Optionally close others
     document.querySelectorAll('.faq-item').forEach(x => x.classList.remove('open'));
     if (!isOpen) {
       item.classList.add('open');
@@ -91,7 +94,7 @@ document.querySelectorAll('.faq-question').forEach(btn => {
   });
 });
 
-// Point 18: Password Visibility Eye Toggle
+// Password Visibility Eye Toggle
 document.querySelectorAll('[data-eye-toggle]').forEach(btn => {
   btn.addEventListener('click', () => {
     const wrap = btn.closest('.password-wrap');
@@ -109,7 +112,7 @@ document.querySelectorAll('[data-eye-toggle]').forEach(btn => {
   });
 });
 
-// Point 7: Back to Top Button
+// Back to Top Button
 window.addEventListener('scroll', () => {
   if (window.scrollY > 280) {
     backToTopBtn?.classList.add('visible');

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <!-- Point 25: Theme & RTL buttons outside the card in mobile view -->
+  <!-- Point 16: Keep Theme & RTL buttons outside the card on all screens -->
   <div class="auth-top-actions">
     <button class="icon-btn" data-rtl-toggle title="Toggle RTL">⇄</button>
     <button class="icon-btn" data-theme-toggle title="Toggle theme">◐</button>
@@ -17,13 +17,14 @@
 
   <main class="auth-page">
     <div class="auth-box">
+      <!-- Point 9: Brand name aligned in center -->
       <a class="logo auth-logo" href="index.html">
         <span class="logo-mark">✳</span>
         <span>millet<span class="brand-amp">&</span>more<small>goodness in every bite</small></span>
       </a>
-      <div class="eyebrow" style="text-align:center">THE GOOD-SNACK CLUB</div>
+
+      <!-- Point 8: Clean heading without extra text -->
       <h1>Welcome Back</h1>
-      <p>Sign in to track orders, manage your pantry subscriptions, and access member perks.</p>
 
       <form data-demo data-success="Sign in successful! Redirecting to your dashboard...">
         <div class="field">
@@ -31,19 +32,18 @@
           <input id="loginEmail" type="email" required placeholder="you@example.com">
         </div>
 
-        <!-- Point 18: Password field with eye toggle & properly placed forgot password link -->
+        <!-- Point 10: Forgot password text placed BELOW the password tab box -->
         <div class="field">
-          <label for="loginPassword">
-            <span>Password</span>
-            <a href="#" class="forgot-link">Forgot password?</a>
-          </label>
+          <label for="loginPassword">Password</label>
           <div class="password-wrap">
             <input id="loginPassword" type="password" required minlength="6" placeholder="Enter your password">
             <button type="button" class="eye-toggle-btn" data-eye-toggle aria-label="Toggle password visibility">👁</button>
           </div>
+          <div class="forgot-password-wrap">
+            <a href="#" class="forgot-link">Forgot password?</a>
+          </div>
         </div>
 
-        <!-- Point 18: Properly aligned checkbox -->
         <label class="form-check">
           <input type="checkbox" checked>
           <span>Keep me signed in on this device</span>
@@ -52,7 +52,7 @@
         <button class="btn" type="submit">Sign In →</button>
       </form>
 
-      <!-- Point 20: SOCIAL MEDIA SIGN IN BUTTONS -->
+      <!-- Social login buttons -->
       <div class="social-auth-title">Or continue with</div>
       <div class="social-auth-grid">
         <button type="button" class="social-auth-btn" onclick="toast('Connecting with Google...')">
@@ -69,8 +69,8 @@
         </button>
       </div>
 
-      <div class="auth-bottom">New to Millet&More? <a href="register.html">Create an Account</a></div>
-      <a class="back-home" href="index.html">← Back to Millet&More Store</a>
+      <div class="auth-bottom">New to Millet&amp;More? <a href="register.html">Create an Account</a></div>
+      <a class="back-home" href="index.html">← Back to Millet&amp;More Store</a>
     </div>
   </main>
 
